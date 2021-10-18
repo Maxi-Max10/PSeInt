@@ -1,0 +1,32 @@
+//3. Crea una función EsMultiplo que reciba los dos números pasados por el usuario,
+//validando que el primer numero múltiplo del segundo y devuelva verdadero si el
+//	primer numero es múltiplo del segundo, sino es múltiplo que devuelva falso.
+
+
+
+Proceso subpro3
+	definir num1, num2 Como Entero
+	Definir esMultiplo Como Logico
+	
+	Escribir Sin Saltar "Número 1:";
+	Leer num1;
+	Escribir Sin Saltar "Número 2:";
+	Leer num2;
+	Si numeross(num1,num2) Entonces
+		Escribir num1," es múltiplo de ",num2;
+	SiNo
+		Escribir num1," no es múltiplo de ",num2;
+	FinSi
+	
+FinProceso
+
+Funcion esMultiplo<-numeross(num1 Por Valor,num2 Por Valor)
+	
+	si num1 %  num2 = 0 Entonces
+		esMultiplo <- Verdadero
+	SiNo
+		esMultiplo <- Falso
+	FinSi
+	
+	
+FinFuncion
